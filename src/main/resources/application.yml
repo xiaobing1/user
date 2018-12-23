@@ -1,4 +1,9 @@
 eureka:
   client:
     service-url:
-      defaultZone:http://${eureka.instance.hostname}:${server.port}/server/
+      defaultZone: http://127.0.0.1:8088/eureka/
+server:
+  port: 8081
+spring:
+  application:
+    name: user-service
